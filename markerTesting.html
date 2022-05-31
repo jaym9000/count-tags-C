@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<title>mySQL Command Line Client Cheat Sheet</title>
+</head>
+<body >
+<div class="container">
+<h1>A Quick MySQL How-To</h1>
+<p>Based on Professor Du's cheatsheet</p>
+<br/>
+<ol>
+  <li>Connect to mysql server (choose one):</li>
+    <div class="well">
+      <ul>
+        <li><code>$ mysql -u <span style="font-style: italic;">user_id </span>-p</code></li>
+        <li><code>$ mysql -u <span style="font-style: italic;">user_id </span>-p
+      	  <span style="font-style: italic;">database_name </span></code> <br/></li>
+        </ul>
+      </div>
+			<li>In general to execute a SQL statement online:&nbsp;<code></code></li>
+		    <div class="well">
+		      <ul>
+		    <li><code>mysql&gt; <span style="font-style: italic;">sql_statement</span>;</code></li>
+		  </ul>
+		    </div><li>Create a new database:&nbsp;<code></code></li>
+    <div class="well">
+      <ul>
+        <li><code>mysql&gt; CREATE DATABASE <span
+          style="font-style: italic;">database_name;</span></code></li>
+        </ul>
+    </div>
+  <li>Show available databases:</li>
+    <div class="well">
+      <ul>
+        <li>&nbsp;<code>mysql&gt; SHOW DATABASES;</code></li>
+      </ul>
+    </div>
+  <li>Choose a database:</li>
+    <div class="well">
+      <ul>
+        <li>&nbsp;<code>mysql&gt; USE <span style="font-style: italic;">database_name</span>;</code></li>
+      </ul>
+    </div>
+  <li>Show table names of the current database:&nbsp;<code></code></li>
+    <div class="well">
+      <ul>
+    <li><code>mysql&gt; SHOW TABLES;</code></li>
+  </ul>
+    </div>
+  <li>Show schema definition of a table:&nbsp;<code></code></li>
+    <div class="well">
+      <ul>
+    <li><code>mysql&gt; DESCRIBE <span style="font-style: italic;">table_name</span>;</code></li>
+  </ul>
+    </div>
+		<li>Show the stored procedures names of the current database:&nbsp;<code></code></li>
+	    <div class="well">
+	      <ul>
+					<li><code>mysql&gt; SHOW PROCEDURE STATUS;</code></li>
+	  </ul>
+	 </div>
+	 <li>List the contents of a stored procedure:&nbsp;<code></code></li>
+		 <div class="well">
+			 <ul>
+				 <li><code>mysql&gt; SHOW CREATE PROCEDURE STATUS <span style="font-style: italic;">proc_name</span>;</code></li>
+	 </ul>
+	</div>
+  <li>Show all rows of a table:&nbsp;<code></code></li>
+    <div class="well">
+      <ul>
+    <li><code>mysql&gt; SELECT * FROM <span style="font-style: italic;">table_name</span>;</code></li>
+  </ul>
+    </div>
+  <li>Delete a table:</li>
+    <div class="well">
+      <ul>
+    <li><code>mysql&gt; DROP TABLE <span style="font-style: italic;">table_name</span>;</code></li>
+  </ul>
+    </div>
+  <li>Execute a SQL script file from the current working directory:&nbsp;</li>
+    <div class="well">
+      <ul>
+    <li><code>mysql&gt; SOURCE <span style="font-style: italic;">sql_script_file_name</span>;</code></li>
+  </ul>
+    </div>
+  <li>Load a data file to a table.</li>
+    <div class="well">
+      <ul>
+    <li><code>mysql&gt; LOAD DATA LOCAL INFILE
+      <span style="font-style: italic;">absolute_path_to_the_data_file</span> INTO TABLE
+      <span style="font-style: italic;">table_name;</span></code></li>
+  </ul>
+    </div>
+  <li>Exit from mysql:</li>
+    <div class="well">
+      <ul>
+    <li><code>mysql&gt; quit </code></li>
+  </ul>
+    </div>
+</ol>
+</div>
+</body>
+</html>

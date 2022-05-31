@@ -1,0 +1,7 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/jaym9000/Desktop/Programming/unb-projects/count-tags'
+gcc -c main.c
+gcc -c htags.c
+gcc -o main main.o htags.o
+make: Leaving directory `/Users/jaym9000/Desktop/Programming/unb-projects/count-tags'
+ 
